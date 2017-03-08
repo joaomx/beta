@@ -2,6 +2,8 @@
 .sass-cache
 .publish
 Desktop.ini
+public
 node_modules
 **/generated/_icons.sass
 npm-debug.log
+
