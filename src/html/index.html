@@ -41,7 +41,7 @@
 	<link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
-<body class="header-fixed">
+<body id="body" class="header-fixed">
 	<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -92,16 +92,16 @@
 						<div class="menu-container">
 							<ul class="nav navbar-nav">
 								<!-- Home -->
-								<li class="dropdown active">
-									<a href="/">
+								<li class="page-scroll dropdown home">
+									<a href="#body">
 										Quem somos
 									</a>
 								</li>
 								<!-- End Home -->
 
 								<!-- Pages -->
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<li class="page-scroll dropdown">
+									<a href="#accao" class="dropdown-toggle" data-toggle="dropdown">
 										Linhas de Acção
 									</a>
 									<ul class="dropdown-menu">
@@ -129,8 +129,8 @@
 								<!-- End Info -->
 
 								<!-- Partners -->
-								<li class="dropdown">
-									<a href="#">
+								<li class="page-scroll dropdown">
+									<a href="#junta">
 										Junta-te
 									</a>
 								</li>
@@ -164,7 +164,8 @@
 						data-easing="Back.easeInOut"
 						data-endeasing="Power1.easeIn"
 						data-endspeed="300">
-						<span class="color-green">Canna</span>tiva
+						<span style="color: #497B38;">Canna</span>
+						<span style="color: #b2b2b2;">tiva</span>
 						</div>
 						<!-- END LAYER -->
 
@@ -328,7 +329,7 @@
 		<!-- === End MGM Post === -->
 
 		<!--=== Parallax About Block ===-->
-		<div class="parallax-bg parallaxBg1">
+		<div class="parallax-bg parallaxBg1" id="quem-somos">
 			<div class="container content parallax-about">
 				<div class="title-box-v2">
 					<h2>Sobra a <span class="color-green">Associação</span></h2>
@@ -370,7 +371,7 @@
 
 
 		<!-- === Facts & Numbers === -->
-		<div class="parallax-counter-v1 parallaxBg content-sm">
+		<div class="parallax-counter-v1 parallaxBg content-sm" id="accao">
 			<div class="container">
 				<h2 class="title-v2 title-light title-center"> NÚMEROS E FACTOS</h2>
 				<p class="space-xlg-hor text-center color-light">Alguns números registados em 2015 sobre a realidade do consumo de cannabis em Portugal.</p>
@@ -402,7 +403,7 @@
 		<!-- === End Facts & Numbers === -->
 
 		<!-- Flat Testimonials -->
-		<div class="flat-testimonials bg-image-v1 parallaxBg margin-bottom-60" style="background: url('./bg-testimonials2.jpg') repeat fixed;">
+		<div class="flat-testimonials bg-image-v1 parallaxBg margin-bottom-60" style="background: url('./bg-testimonials2.jpg') repeat fixed;" id="junta">
 			<div class="container">
 				<div class="headline-center headline-light margin-bottom-60">
 					<h2>Testemunhos</h2>
