@@ -31,7 +31,7 @@ export default class Example {
       gapHorizontal: 10,
       gapVertical: 10,
       gridAdjustment: 'responsive',
-      caption: 'overlayBottomPush',
+      caption: '',
       displayType: 'sequentially',
       displayTypeSpeed: 100,
 
