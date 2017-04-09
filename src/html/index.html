@@ -54,7 +54,7 @@
 		<!--=== Header v6 ===-->
 		<div class="header-v6 header-classic-white header-sticky">
 			<!-- Navbar -->
-			<div class="navbar mega-menu" role="navigation">
+			<nav class="navbar mega-menu" role="navigation">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="menu-container">
@@ -140,7 +140,7 @@
 						</div>
 					</div><!--/navbar-collapse-->
 				</div>
-			</div>
+			</nav>
 			<!-- End Navbar -->
 		</div>
 		<!--=== End Header v6 ===-->
@@ -547,6 +547,7 @@
 	<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
 	<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
 	<script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
+	<script type="text/javascript" src="assets/plugins/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="assets/plugins/counter/waypoints.min.js"></script>
 	<script type="text/javascript" src="assets/plugins/counter/jquery.counterup.min.js"></script>
 		<script type="text/javascript" src="assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
@@ -565,6 +566,19 @@
 			App.initParallaxBg();
 			FancyBox.initFancybox();
 			RevolutionSlider.initRSfullScreenOffset();
+
+			var $offset = $(".mega-menu").height()+8;
+
+	    // jQuery for page scrolling feature - requires jQuery Easing plugin
+	    $('.page-scroll a').bind('click', function(event) {
+	      var $position = $($(this).attr('href')).offset().top;
+	      $('html, body').stop().animate({
+	        scrollTop: $position - $offset
+	      }, 600);
+	      event.preventDefault();
+	    });
+
+			var $scrollspy = $('body').scrollspy({target: '.mega-menu', offset: $offset+2});
 		});
 	</script>
 	<!--[if lt IE 9]>
