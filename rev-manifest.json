@@ -1,4 +1,13 @@
 {
-  "javascripts/app.js": "javascripts/app-3c8cde4536ed3d322993.js",
-  "stylesheets/app.css": "stylesheets/app-582e79ead0.css"
+  "images/parallax/missao_hero.jpg": "images/parallax/missao_hero-07778d6ca8.jpg",
+  "images/portfolio/autocultivo.jpg": "images/portfolio/autocultivo-8d301f38fc.jpg",
+  "images/portfolio/canabis_medicinal.jpg": "images/portfolio/canabis_medicinal-1e3466b654.jpg",
+  "images/portfolio/canabis_recreativa.jpg": "images/portfolio/canabis_recreativa-e1e3fa51e2.jpg",
+  "images/portfolio/canhamo_industrial.jpg": "images/portfolio/canhamo_industrial-fa891c10b9.jpg",
+  "images/portfolio/reducao_riscos.jpg": "images/portfolio/reducao_riscos-28a0cdf4f1.jpg",
+  "images/slider/slide1.jpg": "images/slider/slide1-d46a39698d.jpg",
+  "images/slider/slide2.jpg": "images/slider/slide2-c14759e58d.jpg",
+  "images/slider/slide3.jpg": "images/slider/slide3-f0cd2d83bd.jpg",
+  "javascripts/app.js": "javascripts/app-bfedc282ebdf1ce467d0.js",
+  "stylesheets/app.css": "stylesheets/app-871b8298c4.css"
 }
