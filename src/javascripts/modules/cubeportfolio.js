@@ -1,4 +1,4 @@
-export default class Example {
+export default class CubePortfolio {
   constructor(el) {
 
   var gridContainer = $('#grid-container'),
