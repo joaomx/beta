@@ -123,9 +123,9 @@
 									<a href="#accao" class="dropdown-toggle" data-toggle="dropdown">
 										Linhas de Acção
 									</a>
+									<!--
 									<ul class="dropdown-menu">
 
-										<!-- Info Pages -->
 										<li class="dropdown-submenu">
 											<a href="#">Cannabis</a>
 											<ul class="dropdown-menu">
@@ -134,16 +134,13 @@
 												<li><a href="#">Terapêutica</a></li>
 											</ul>
 										</li>
-										<!-- End About Pages -->
 
-										<!-- Individual Link -->
 										<li><a href="#">Auto cultivo</a></li>
-										<!-- End Individual Link -->
 
-										<!-- Individual Link -->
 										<li><a href="#">Redução de Danos e Riscos</a></li>
-										<!-- End Individual Link -->
+
 									</ul>
+									-->
 								</li>
 								<!-- End Info -->
 
@@ -220,8 +217,12 @@
 						data-captionhidden="off"
 						style="z-index: 6">
 						<div style="display: flex;">
-						<input style="width: 200px" placeholder="Endereço E-mail" type="text" class="form-control" />
-						<button class="btn-u" style="margin-left: 20px;">Assinar</button>
+							<form action="http://www.cannativa.pt/test.php" method="POST">
+								<input style="width: 200px" placeholder="Endereço E-mail" type="text" name="name" class="form-control" />
+								<input type="hidden" name="subject" value="Newsletter" />
+								<input type="hidden" name="message" value="Subscrever as últimas notícias" />
+								<input type="submit" class="btn-u" style="margin-left: 20px;" value="Assinar" />
+							</form>
 						</div>
 						</div>
 
