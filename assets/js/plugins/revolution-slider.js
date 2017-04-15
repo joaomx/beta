@@ -1,7 +1,7 @@
 var RevolutionSlider = function () {
 
     return {
-        
+
         //Revolution Slider - Full Width
         initRSfullWidth: function () {
 		    var revapi;
@@ -30,12 +30,12 @@ var RevolutionSlider = function () {
 	                fullWidth:"off",
 	                fullScreen:"on",
 	                hideCaptionAtLimit: "",
-	                dottedOverlay:"twoxtwo",
+	                dottedOverlay:"threexthree",
 	                navigationStyle:"preview4",
 	                fullScreenOffsetContainer: ".header"
 	            });
 	        });
-        }        
+        }
 
     };
-}();        
+}();
