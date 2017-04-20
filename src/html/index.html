@@ -216,14 +216,29 @@
 						data-endeasing="Power1.easeIn"
 						data-captionhidden="off"
 						style="z-index: 6">
-						<div style="display: flex;">
-							<form action="http://www.cannativa.pt/test.php" method="POST">
-								<input style="width: 200px" placeholder="Endereço E-mail" type="text" name="name" class="form-control" />
-								<input type="hidden" name="subject" value="Newsletter" />
-								<input type="hidden" name="message" value="Subscrever as últimas notícias" />
-								<input type="submit" class="btn-u" style="margin-left: 20px;" value="Assinar" />
+							<form style="display: flex; flex-direction: column; justify-content: center;"
+								action="//club.us15.list-manage.com/subscribe/post?u=fb8cbf2e597b7a21916655beb&amp;id=d2563be44d"
+								id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+								method="POST" data-module="newsletterForm">
+								<div style="display: flex;">
+									<input style="width: 200px" placeholder="Endereço E-mail" type="email"
+										name="EMAIL" id="mce-EMAIL" class="form-control" />
+									<input style="display: none;" type="text"
+										name="b_fb8cbf2e597b7a21916655beb_d2563be44d"
+										tabindex="-1" value="">
+									<input type="submit" class="btn-u" style="margin-left: 20px;"
+										name="subscribe" id="mc-embedded-subscribe" value="Assinar" />
+								</div>
+								<div id="newsletter_err">	<!-- Err Messages -->
+									<div class="note note-error" id="err_connect">
+										Erro ao comunicar com o servidor de Newsletters<br/>
+										Verifique a sua ligação
+									</div>
+									<div class="note note-error" id="err_validate">
+										Introduza um e-mail correcto
+									</div>
+								</div>
 							</form>
-						</div>
 						</div>
 
 						<!-- LAYER -->
