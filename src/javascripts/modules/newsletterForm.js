@@ -3,15 +3,18 @@ require('ajaxchimp');
 export default class NewsletterForm {
 	constructor (el) {
 		$(document).ready(function () {
-			console.log('el: ', $(el)[0] );
-			console.log('form: ', $('mc-embedded-subscribe-form') );
-			console.log('form.submit: ', $('#mc-embedded-subscribe-form').submit );
-			console.log('ajaxchimp: ', $.ajaxChimp);
+
 			$('#mc-embedded-subscribe-form').submit ( function(ev) {
-				console.log('ev: ',ev);
 				ev.preventDefault();
 
-				var $form = $(el);
+				let errEl = $('#newsletter-err');
+				let inputField = $('#mce-EMAIL');
+				let loadingIcon = $('#newsletter-loading');
+				let successMessage = $('#newsletter-success');
+				let $form = $(el);
+
+				loadingIcon.show();
+
 				$.ajax({
 					type: $form.attr('method'),
 					url: $form.attr('action').replace('/post?', '/post-json?').concat('&c=?'),
@@ -23,16 +26,42 @@ export default class NewsletterForm {
 					error: function(err) { // put user friendly connection error message
 						console.log('err: ',err);
 
-						$('#err_connect').style('display: block;');
+						loadingIcon.hide();
+						errEl.html(`
+							Erro ao comunicar com o servidor <br/>
+							Verifique a sua ligação`);
+						errEl.show();
 					},
 					success: function(data) {
 						if (data.result != "success") {
 							// mailchimp returned error, check data.msg
-							$('#mce_EMAIL').addClass('state-error');
-							console.log('success err: ',data);
+
+							loadingIcon.hide();
+							inputField.addClass('NewsletterForm-input--error')
+							errEl.text(`
+								Erro no e-mail introduzido
+								`);
+
+							let timer = setTimeout(function(){
+								inputField.removeClass('NewsletterForm-input--error');
+								errEl.hide();
+							}, 5000);
+							inputField.one('input', function(){
+								window.clearTimeout(timer);
+								inputField.removeClass('NewsletterForm-input--error');
+								errEl.hide();
+							});
+							errEl.show();
+
 						} else {
 							// It worked, carry on...
-							console.log('success: ', data);
+							loadingIcon.hide();
+							$form[0].reset();
+							$form.fadeOut(200, function(){
+								successMessage.fadeIn(250, "linear");
+							});
+
+
 						}
 					}
 				});

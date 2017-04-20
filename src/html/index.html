@@ -181,8 +181,8 @@
 						data-easing="Back.easeInOut"
 						data-endeasing="Power1.easeIn"
 						data-endspeed="300">
-						<span style="color: #497B38;">Canna</span>
-						<span style="color: #b2b2b2;">tiva</span>
+						<span class="color-green">Canna</span>
+						tiva
 						</div>
 						<!-- END LAYER -->
 
@@ -206,38 +206,40 @@
 						<!-- END LAYER -->
 
 						<div class="tp-caption sft"
-						data-x="center"
-						data-hoffset="0"
-						data-y="bottom"
-						data-speed="1800"
-						data-start="3000"
-						data-easing="Power4.easeOut"
-						data-endspeed="300"
-						data-endeasing="Power1.easeIn"
-						data-captionhidden="off"
-						style="z-index: 6">
-							<form style="display: flex; flex-direction: column; justify-content: center;"
+							data-x="center"
+							data-hoffset="0"
+							data-y="300"
+							data-speed="1800"
+							data-start="3000"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6">
+
+							<div id="newsletter-success" class="NewsletterForm-hidden">
+								<div class="re-title-v2">Obrigado</div>
+								<div class="re-text-v1">Deverá receber um e-mail no qual confirmará a sua subscrição</div>
+							</div>
+
+							<form class="NewsletterForm"
 								action="//club.us15.list-manage.com/subscribe/post?u=fb8cbf2e597b7a21916655beb&amp;id=d2563be44d"
 								id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
 								method="POST" data-module="newsletterForm">
-								<div style="display: flex;">
-									<input style="width: 200px" placeholder="Endereço E-mail" type="email"
-										name="EMAIL" id="mce-EMAIL" class="form-control" />
-									<input style="display: none;" type="text"
+								<div class="NewsletterForm-inputContainer">
+									<label class="NewsletterForm-labelInput input">
+										<input class="NewsletterForm-input form-control" placeholder="Endereço E-mail" type="email"
+											name="EMAIL" id="mce-EMAIL" />
+										<div class="label label-danger NewsletterForm-hidden" id="newsletter-err"></div>
+									</label>
+									<input class="hidden" type="text"
 										name="b_fb8cbf2e597b7a21916655beb_d2563be44d"
 										tabindex="-1" value="">
-									<input type="submit" class="btn-u" style="margin-left: 20px;"
-										name="subscribe" id="mc-embedded-subscribe" value="Assinar" />
 								</div>
-								<div id="newsletter_err">	<!-- Err Messages -->
-									<div class="note note-error" id="err_connect">
-										Erro ao comunicar com o servidor de Newsletters<br/>
-										Verifique a sua ligação
-									</div>
-									<div class="note note-error" id="err_validate">
-										Introduza um e-mail correcto
-									</div>
-								</div>
+								<button type="submit" class="btn-u NewsletterForm-submit"
+									name="subscribe" id="mc-embedded-subscribe" value="Assinar">Assinar
+									<i id="newsletter-loading" class="fa fa-circle-o-notch fa-spin fa-fw NewsletterForm-hidden"></i>
+								</button>
 							</form>
 						</div>
 

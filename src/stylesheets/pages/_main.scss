@@ -22,3 +22,37 @@
 	color: #585f69;
 	position: relative;
 }
+
+.NewsletterForm {
+	display: flex;
+}
+
+.NewsletterForm-inputContainer {
+	display: flex;
+	max-width: 200px;
+}
+
+.NewsletterForm-labelInput {
+	display: flex;
+	flex-direction: column;
+}
+
+.NewsletterForm-input {
+	background-color: #FFF;
+	border-color: #BBB;
+	border-width: 1px;
+	width: 200px;
+}
+
+.NewsletterForm-input--error {
+	background-color: #FFF0F0;
+}
+
+.NewsletterForm-submit {
+	height: 34px;
+	margin-left: 20px;
+}
+
+.NewsletterForm-hidden {
+	display: none;
+}
