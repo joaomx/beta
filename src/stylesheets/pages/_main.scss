@@ -31,12 +31,12 @@
 
 .PortfolioHeader {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .PortfolioHeader-Image {
-	min-width: 40%;
-	max-width: 40%;
 	margin-right: 20px;
 	margin-bottom: 0px;
 }
