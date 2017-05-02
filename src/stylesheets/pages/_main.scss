@@ -23,6 +23,34 @@
 	position: relative;
 }
 
+.PortfolioItem {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.PortfolioHeader {
+	display: flex;
+	flex-direction: row;
+}
+
+.PortfolioHeader-Image {
+	min-width: 40%;
+	max-width: 40%;
+	margin-right: 20px;
+	margin-bottom: 0px;
+}
+
+.PortfolioItem-Row {
+	display: flex;
+	flex-direction: row;
+}
+
+.PortfolioItem-Row--reverse {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
 .NewsletterForm {
 	display: flex;
 }
@@ -55,4 +83,22 @@
 
 .NewsletterForm-hidden {
 	display: none;
+}
+
+@media (max-width: 1000px) {
+
+	.PortfolioHeader {
+		margin-top: 40px;
+		flex-direction: column;
+	}
+
+	.PortfolioHeader-Image {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.PortfolioItem-Row {
+		margin-top: 0;
+	}
+
 }
