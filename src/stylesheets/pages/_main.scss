@@ -62,14 +62,13 @@
 
 .NewsletterForm-labelInput {
 	display: flex;
-	flex-direction: column;
 }
 
 .NewsletterForm-input {
 	background-color: #FFF;
 	border-color: #BBB;
 	border-width: 1px;
-	width: 200px;
+	
 }
 
 .NewsletterForm-input--error {
@@ -78,7 +77,7 @@
 
 .NewsletterForm-submit {
 	height: 34px;
-	margin-left: 20px;
+	border: 1px solid white;
 }
 
 .NewsletterForm-hidden {

@@ -13,7 +13,7 @@ export default class NewsletterForm {
 				let successMessage = $('#newsletter-success');
 				let $form = $(el);
 
-				loadingIcon.show();
+				loadingIcon.toggleClass("fa-circle-o-notch fa-spin fa-fw");
 
 				$.ajax({
 					type: $form.attr('method'),
@@ -26,7 +26,7 @@ export default class NewsletterForm {
 					error: function(err) { // put user friendly connection error message
 						console.log('err: ',err);
 
-						loadingIcon.hide();
+						loadingIcon.toggleClass("fa-circle-o-notch fa-spin fa-fw");
 						errEl.html(`
 							Erro ao comunicar com o servidor <br/>
 							Verifique a sua ligação`);
@@ -36,7 +36,7 @@ export default class NewsletterForm {
 						if (data.result != "success") {
 							// mailchimp returned error, check data.msg
 
-							loadingIcon.hide();
+							loadingIcon.toggleClass("fa-circle-o-notch fa-spin fa-fw");
 							inputField.addClass('NewsletterForm-input--error')
 							errEl.text(`
 								Erro no e-mail introduzido
@@ -55,7 +55,7 @@ export default class NewsletterForm {
 
 						} else {
 							// It worked, carry on...
-							loadingIcon.hide();
+							loadingIcon.toggleClass("fa-circle-o-notch fa-spin fa-fw");
 							$form[0].reset();
 							$form.fadeOut(200, function(){
 								successMessage.fadeIn(250, "linear");
