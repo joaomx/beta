@@ -7563,7 +7563,7 @@ ul.labels-demo li {
 }
 
 .banner-info i {
-	float: left;
+	float: center;
 	color: #fff;
 	padding: 11px;
 	/*min-width works with line-icon*/
