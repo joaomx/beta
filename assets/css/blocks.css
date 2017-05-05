@@ -4636,6 +4636,7 @@
 }
 
 .re-text-v1 {
+  position:center !important
   color: #fff;
   font-size: 50px;
   text-align: center;
