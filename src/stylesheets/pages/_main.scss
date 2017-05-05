@@ -19,7 +19,12 @@
 }
 
 .parallax-about .title-box-v2 p,h2 {
-	color: #585f69;
+	color: #3c3c3d;
+	position: relative;
+}
+
+.parallax-about .title-box-v2 h3 {
+	color: #008654;
 	position: relative;
 }
 
@@ -68,7 +73,7 @@
 	background-color: #FFF;
 	border-color: #BBB;
 	border-width: 1px;
-	
+
 }
 
 .NewsletterForm-input--error {
@@ -83,6 +88,37 @@
 .NewsletterForm-hidden {
 	display: none;
 }
+
+.bg-color-green1 { background-color: #008654 !important;}
+
+.btn {
+	box-shadow: none;
+	border-radius: 0;
+}
+.btn-u {
+	border: 1;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 400;
+	padding: 6px 13px;
+	position: relative;
+	background: #008654;
+	white-space: nowrap;
+	display: inline-block;
+	text-decoration: none;
+}
+.btn-u:hover {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-u.btn-block {
+	text-align: center;
+}
+
+
 
 @media (max-width: 1000px) {
 
@@ -102,3 +138,7 @@
 	}
 
 }
+
+
+/**SLIDER**/
+.tp-simpleresponsive a{	text-size:100%}
