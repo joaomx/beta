@@ -9,12 +9,6 @@ export default class ContactForm {
 
 				let errEl = $('#contact-err');
 
-        let nameField = $('#mce-FNAME');
-        let emailField = $('#mce-EMAIL');
-        let numberField = $('#mce-MMERGE2');
-        let interestField = $('#mce-MMERGE4');
-        let messageField = $('#mce-MMERGE3');
-
 				let loadingIcon = $('#contact-loading');
 				let successMessage = $('#contact-success');
 				let $form = $('#mc-embedded-contact-form');
@@ -47,7 +41,7 @@ export default class ContactForm {
 								Erro num dos campos
 								`);
 
-							let timer = setTimeout(function(){
+							setTimeout(function(){
 								errEl.hide();
 							}, 5000);
 
