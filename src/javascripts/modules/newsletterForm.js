@@ -11,7 +11,7 @@ export default class NewsletterForm {
 				let inputField = $('#mce-EMAIL');
 				let loadingIcon = $('#newsletter-loading');
 				let successMessage = $('#newsletter-success');
-				let $form = $(el);
+				let $form = $('#mc-embedded-subscribe-form');
 
 				loadingIcon.toggleClass("fa-circle-o-notch fa-spin fa-fw");
 

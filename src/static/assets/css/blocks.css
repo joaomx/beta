@@ -4636,9 +4636,9 @@
 }
 
 .re-text-v1 {
-  position:center !important
+  position:center !important;
   color: #fff;
-  font-size: 50px;
+  font-size: 24px;
   text-align: center;
   font-family: "Open Sans", Arial, sans-serif;
 }
