@@ -4,6 +4,21 @@ export default class ContactForm {
 	constructor (el) {
 		$(document).ready(function () {
 
+			$('#mce-MMERGE3').keydown( function(ev){
+				let el = $('#mce-MMERGE3');
+				let errorMsg = $('#contactFormMsg-error');
+
+				if( ev.target.textLength +1 >= 249 ) {
+					el.toggleClass('error-state');
+					errorMsg.removeClass('hidden');
+				}
+				else {
+					el.removeClass('error-state');
+					errorMsg.addClass('hidden');
+				}
+
+			} );
+
 			$('#mc-embedded-contact-form').submit ( function(ev) {
 				ev.preventDefault();
 
