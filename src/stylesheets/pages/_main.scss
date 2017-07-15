@@ -125,9 +125,11 @@
 	transition: all 0.3s ease-in-out;
 }
 
-.btn-u.btn-block {
+.btn-.btn-block {
 	text-align: center;
 }
+
+
 
 .EmailAddress {
 	font-weight: bold;
@@ -160,4 +162,7 @@
 
 
 /**SLIDER**/
-/**CUBEPORTFOLIO**/
+/**FAQPAGE**/
+.col-md-9 {
+width: 100%;
+}
