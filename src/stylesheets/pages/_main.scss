@@ -14,6 +14,19 @@
 	}
 }
 
+.parallax-meet {
+		position: relative;
+		background: url(../images/parallax/meet.jpg) 20% no-repeat fixed;
+
+		&:before {
+			width: 100%;
+			height: 100%;
+			content: " ";
+			position: absolute;
+			background: rgba(255,255,255,0.8);
+		}
+}
+
 .parallax-about .info-blocks-v2 {
 	margin-bottom: 5px;
 }
@@ -165,4 +178,72 @@
 /**FAQPAGE**/
 .col-md-9 {
 width: 100%;
+}
+
+.headline {
+	display: block;
+	margin: 10px 0 25px 0;
+	border-bottom: 1px dotted #e4e9f0;
+}
+
+.headline h2 {
+	font-size: 22px;
+}
+
+.headline h2,
+.headline h3,
+.headline h4 {
+	margin: 0 0 -2px 0;
+	padding-bottom: 5px;
+	display: inline-block;
+	border-bottom: 2px solid #008654;
+}
+
+.headline-md {
+	margin-bottom: 15px;
+}
+
+.headline-md h2 {
+	font-size: 21px;
+}
+
+/*Footer-v1
+------------------------------------*/
+.footer-v1 .footer {
+	padding: 40px 0;
+	background: #a1a1a1;
+}
+
+.footer-v1 .footer p {
+	color: #eee;
+}
+
+.footer-v1 .footer h2 {
+	color: #eee;
+	font-size: 18px;
+	font-weight: 200;
+}
+
+/* PARALAX SLIDER */
+
+.slider-inner .da-slider {
+ box-shadow: none;
+ border-bottom: 2px solid #ddd;
+}
+
+.slider-inner .da-dots {
+  z-index: 10;
+}
+
+@media (max-width: 450px) {
+ .da-slide p {
+
+ }
+}
+
+@media (max-width: 900px) {
+ /*Slider Parallax*/
+ .da-slide .da-img {
+
+ }
 }
