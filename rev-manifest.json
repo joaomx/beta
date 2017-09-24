@@ -1,12 +1,18 @@
 {
   "images/logo_base.png": "images/logo_base-34db15b9d8.png",
+  "images/parallax/meet.jpg": "images/parallax/meet-c60f53171e.jpg",
   "images/parallax/missao_hero.jpg": "images/parallax/missao_hero-07778d6ca8.jpg",
+  "images/portfolio/a.jpg": "images/portfolio/a-1e3466b654.jpg",
   "images/portfolio/autocultivo.jpg": "images/portfolio/autocultivo-8d301f38fc.jpg",
-  "images/portfolio/canabis_medicinal.jpg": "images/portfolio/canabis_medicinal-1e3466b654.jpg",
+  "images/portfolio/canabis_medicinal.jpg": "images/portfolio/canabis_medicinal-0ce7d3ddf5.jpg",
   "images/portfolio/canabis_recreativa.jpg": "images/portfolio/canabis_recreativa-e1e3fa51e2.jpg",
   "images/portfolio/canhamo_industrial.jpg": "images/portfolio/canhamo_industrial-fa891c10b9.jpg",
   "images/portfolio/reducao_riscos.png": "images/portfolio/reducao_riscos-919ff27828.png",
   "images/slider/bgparalax.jpg": "images/slider/bgparalax-cb4ac885c9.jpg",
+  "images/slider/cannadouro.jpg": "images/slider/cannadouro-fadf0c8a8f.jpg",
+  "images/slider/cannativaslider1.jpg": "images/slider/cannativaslider1-7680c5c2df.jpg",
+  "images/slider/cannativaslider2.jpg": "images/slider/cannativaslider2-5db4d21ee0.jpg",
+  "images/slider/cannativaslider3.jpg": "images/slider/cannativaslider3-68c6724c2d.jpg",
   "images/slider/sl1folha.png": "images/slider/sl1folha-8bf12a2dd2.png",
   "images/slider/sl2cabeco.png": "images/slider/sl2cabeco-75f9da1852.png",
   "images/slider/sl3hemp.jpg": "images/slider/sl3hemp-7d27f9cb73.jpg",
@@ -17,5 +23,5 @@
   "images/slider/slidercannapress.png": "images/slider/slidercannapress-ae985246b5.png",
   "images/slider/slidercannapresscinza.png": "images/slider/slidercannapresscinza-bb0f611b64.png",
   "javascripts/app.js": "javascripts/app-5a73a45580bcc0da0687.js",
-  "stylesheets/app.css": "stylesheets/app-1b7b205e9b.css"
+  "stylesheets/app.css": "stylesheets/app-bbc559da63.css"
 }
